@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Input Mask plugin extension Phone 164 example page</title>
+		<meta charset="UTF-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/inputmask.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/inputmask/jquery.inputmask.js"></script>
+		<script src="./inputmask.phone164.extensions.js"></script>
+
+	</head>
+<body>
+
+<h1>Input Mask plugin extension Phone 164 example page</h1>
+
+<p>Поддерживаются форматы телефонов: РФ, Республика Беларусь, Украина и Казахстан</p>
+<p>
+	<label for="name">Ваш телефон: </label>
+	<input id="name" name="phone" placeholder="Телефон" />
+</p>
+
+<script>
+    $(function () {
+		$("[name='phone']").inputmask("phone164");
+    });
+</script>
+
+</body>
+</html>
