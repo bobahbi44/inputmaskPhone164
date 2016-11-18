@@ -8,3 +8,11 @@ via jquery plugin
 ```
 
 Поддерживаются форматы телефонов: РФ, Республика Беларусь, Украина и Казахстан
+
+```js
+$(document).ready(function(){
+  $("id=phone_input").inputmask('phone164');
+  or
+  Inputmask('phone164').mask(document.querySelectorAll("input"));
+});
+```
